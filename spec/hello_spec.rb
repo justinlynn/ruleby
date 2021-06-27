@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 class HelloFact
   attr :value, true
   def initialize(v=nil); @value = v; end
