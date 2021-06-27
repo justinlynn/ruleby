@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 class NodeShareFact
   attr_reader :times
 

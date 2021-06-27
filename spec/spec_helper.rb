@@ -1,5 +1,4 @@
 require 'ruleby'
-#require 'rspec'
 
 class Success
   attr :status, true

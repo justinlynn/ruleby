@@ -4,6 +4,8 @@
 #ALLISON=`allison --path`
 #ALLISON="/Library/Ruby/Gems/1.8/gems/allison-2.0.3/lib/allison.rb"
 
+require 'rdoc/task'
+
 Rake::RDocTask.new do |rd|
 
     #rd.main = "README.txt"

@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 class FuncFact
   attr :value, true
   attr :times, true
