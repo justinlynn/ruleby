@@ -1,0 +1,32 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 3.0.1
+      - name: bundle install
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+      - name: run tests
+        run: bundle exec rake test
+      - name: run specs
+        run: bundle exec rake spec
+      - name: run benchmarks
+        run: |
+          bundle exec -- ruby benchmarks/basic_rules.rb
+          bundle exec -- ruby benchmarks/joined_rules.rb
+          bundle exec -- ruby benchmarks/miss_manners/miss_manners.rb
+      - name: run examples
+        run: |
+          bundle exec -- ruby examples/diagnosis.rb
+          bundle exec -- ruby examples/fibonacci_example1.rb
+          bundle exec -- ruby examples/fibonacci_example2.rb
+          bundle exec -- ruby examples/fibonacci_example3.rb
+          bundle exec -- ruby examples/hello.rb
+          bundle exec -- ruby examples/ticket.rb
+          bundle exec -- ruby examples/wordgame.rb
