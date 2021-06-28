@@ -25,7 +25,6 @@ jobs:
         run: |
           bundle exec -- ruby examples/diagnosis.rb
           bundle exec -- ruby examples/fibonacci_example1.rb
-          bundle exec -- ruby examples/fibonacci_example2.rb
           bundle exec -- ruby examples/fibonacci_example3.rb
           bundle exec -- ruby examples/hello.rb
           bundle exec -- ruby examples/ticket.rb
