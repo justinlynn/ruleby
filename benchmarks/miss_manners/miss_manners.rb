@@ -11,9 +11,9 @@
 
 $LOAD_PATH << File.join(File.dirname(__FILE__), '../../lib/')
 require 'ruleby'
-require 'model'
-require 'data'
-require 'rules'
+require_relative 'model'
+require_relative 'data'
+require_relative 'rules'
 
 include Ruleby
 include MissManners
