@@ -11,7 +11,7 @@
 
 $LOAD_PATH << File.join(File.dirname(__FILE__), '../lib/')
 require 'ruleby'
-require 'model'
+require_relative 'model'
 
 include Ruleby
 
