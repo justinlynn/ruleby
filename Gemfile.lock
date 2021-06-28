@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ruleby (0.9.b7)
+    ruleby-ng (0.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -35,7 +35,7 @@ DEPENDENCIES
   rake
   rdoc
   rspec
-  ruleby!
+  ruleby-ng!
   test-unit
 
 BUNDLED WITH

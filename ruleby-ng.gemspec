@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = %q{ruleby-j}
+  s.name = %q{ruleby-ng}
   s.version = "0.0.1"
 
   s.authors = [%q{Joe Kutner}, %q{Matt Smith}, %q{J Lynn}]
